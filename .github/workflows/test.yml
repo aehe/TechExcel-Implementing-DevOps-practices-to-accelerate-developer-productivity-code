@@ -9,6 +9,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+    - name: Step one
+      run: echo "Log from step one ${{ secrets.AZURE_CLIENT_ID }}"
     - name: 'Az CLI login'
       uses: azure/login@v1
       with:
