@@ -16,7 +16,6 @@ jobs:
       run: echo "Log from step two"
       
   job2:
-    needs: job1
     runs-on: ubuntu-latest
 
     steps:
